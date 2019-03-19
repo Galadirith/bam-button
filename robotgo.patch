@@ -1,0 +1,18 @@
+diff --git a/key/goKey.h b/key/goKey.h
+index 813d81b..4e8be29 100644
+--- a/key/goKey.h
++++ b/key/goKey.h
+@@ -65,2 +65,2 @@ struct KeyNames{
+-	{ "lcmd",           K_LMETA },
+-	{ "rcmd",           K_RMETA },
++	// { "lcmd",           K_LMETA },
++	// { "rcmd",           K_RMETA },
+diff --git a/key/keycode.h b/key/keycode.h
+index 5d40629..d192b50 100644
+--- a/key/keycode.h
++++ b/key/keycode.h
+@@ -61,2 +61,2 @@ enum _MMKeyCode {
+-	K_LMETA = kVK_Command,
+-	K_RMETA = kVK_RightCommand,
++	// K_LMETA = kVK_Command,
++	// K_RMETA = kVK_RightCommand,
