@@ -1,5 +1,7 @@
 bam
 go/
+bam-button*/
+*.tar.gz
 
 # Binaries for programs and plugins
 *.exe
