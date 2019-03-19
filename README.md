@@ -1,71 +1,27 @@
-# BAM Button :radio_button:
+Welcome to Glitch
+=================
 
-Once upon a time there was a brave young person whos only wish was for a big
-red button that connected to a USB port on a computer and when you hit that
-button it would produce legs :jeans:
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-Unfortunately single use USB buttons are *FRAKING EXPENSIVE* :joy: but their
-fairy hacker had a plan. Instead of a USB button, why not use something that is
-already in their possession, a phone :phone:
+**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-## Installation :rocket:
+Find out more [about Glitch](https://glitch.com/about).
 
-### Pre-built binary :gift:
 
-Go to the [releases](https://github.com/Galadirith/bam-button/releases) page
-and download the latest binary archive for your platform :blush: Once you have
-downloaded the archive extract the pre-built binary `bam`.
+Your Project
+------------
 
-### Build your own binary :wrench:
+On the front-end,
+- edit `public/client.js`, `public/style.css` and `views/index.html`
+- drag in `assets`, like images or music, to add them to your project
 
-1. **Clone `bam-button`**
+On the back-end,
+- your app starts at `server.js`
+- add frameworks and packages in `package.json`
+- safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
-   ```bash
-   git clone
-   cd bam-button
-   ```
 
-2. **Get Go dependencies**
+Made by [Glitch](https://glitch.com/)
+-------------------
 
-   ```bash
-   GOPATH=$(pwd)/go go get github.com/go-vgo/robotgo
-   GOPATH=$(pwd)/go go get github.com/gorilla/websocket
-   ```
-
-   You can omit the `GOPATH` variable if you would like to use the global Go
-   workspace for building `bam-button`
-
-3. **Patch `robotgo` for Max (Optional)**
-
-   If `robotgo` fails to install into your workspace then the following patch
-   maybe fix the problem.
-
-   ```bash
-   cd go/src/github.com/go-vgo/robotgo/
-   git checkout ef847f3
-   git apply --unidiff-zero ../../../../../robotgo.patch
-   ```
-
-4. **Build `bam`**
-
-   ```bash
-   GOPATH=$(pwd)/go CGO_ENABLED=1 GOOS=darwin GOARCH=amd64 go build -ldflags="-s -w" ./bam.go
-   ```
-
-## Usage :tada:
-
-Navigate to https://bam-button.glitch.me on your phone and wait until the
-website has loaded and you can see the *BAM Button*. Now, using the binary
-`bam` that you got from either installation method, simply run the binary `bam`.
-
-```bash
-./bam
-```
-
-Once it is running whenever you press the bam button on
-https://bam-button.glitch.me you will get a pair of legs :jeans: written to
-whatever document you have open :blush:
-
-## License :sunglasses:
-
-`bam-button` is released under the [MIT license](LICENSE.md).
+\ ゜o゜)ノ
