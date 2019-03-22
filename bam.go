@@ -20,6 +20,7 @@ import (
 	"os"
 	"os/signal"
 	"time"
+	"math/rand"
 
 	"github.com/go-vgo/robotgo"
 	"github.com/gorilla/websocket"
@@ -30,7 +31,9 @@ func bam() {
   data, _ := robotgo.ReadAll()
 
   // Update clipboard and paste BAM emoji
-  const BAM = `👖`
+  BAM_array := []string{`👖`, `🍎`, `🍆`, `🍠`, `🍾`, `🐧`, `🎂`}
+  rand.Seed(time.Now().UnixNano())
+  BAM := BAM_array[rand.Intn(len(BAM_array)-1)]
   robotgo.WriteAll(BAM)
   robotgo.PasteStr(BAM)
 
